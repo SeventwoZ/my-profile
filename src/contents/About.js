@@ -17,7 +17,7 @@ const About = () => {
           <div className="about-tagline">
             <span className="about-tagline-label">Background</span>
             <p className="about-tagline-text">
-              B.Eng. in Software and Knowledge Engineering, Kasetsart University
+              Bachelor of Engineering in Software and Knowledge Engineering, Kasetsart University
             </p>
           </div>
         </div>
