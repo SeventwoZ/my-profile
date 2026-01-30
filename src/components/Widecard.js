@@ -5,7 +5,7 @@ class Widecard extends Component {
     render() {
         return (
             <div className="widecard">
-                <img src={this.props.image} alt={`${this.props.title} Image`} className="icon" />
+                <img src={this.props.image} alt={`${this.props.title} logo`} className="icon" />
                 <div className="compdet">
                     <h3>{this.props.title}</h3>
                     <h4 className="secondtext">{this.props.where}</h4>
