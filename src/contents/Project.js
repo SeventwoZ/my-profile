@@ -9,7 +9,7 @@ class Project extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            link: ["https://github.com/QA-RPG/QA-RPG", "https://github.com/exceed-group07/Loved-Tree", "https://github.com/Referite"]
+            link: ["https://github.com/Rabbit-Hunt-Studios/QA-RPG", "https://github.com/exceed-group07/Loved-Tree", "https://github.com/Referite"]
         };
     }
 
@@ -22,13 +22,13 @@ class Project extends Component {
             {
                 title: "QA-RPG",
                 role: "Fullstack Developer | Django, TailwindCSS",
-                desc: "QA-RPG is a project that is a text-based RPG game. The game aims to be educative by using question answering system while maintaining the features that makes up an RPG.",
+                desc: "QA-RPG is a text‑based RPG that blends classic role‑playing mechanics with a question‑answering system, turning gameplay into an engaging way to learn while still feeling like a real RPG adventure.",
                 image: QA,
             },
             {
                 title: "Loved-Tree",
                 role: "Frontend Developer | React",
-                desc: "Loved-Tree is a project that combined between 3 modules which are hardware, backend, and frontend. The main purpose of this project is to help people to take care of their plants anywhere and anytime by using the UI app.",
+                desc: "Loved-Tree is a project that brings together three modules—hardware, backend, and frontend. Its main purpose is to help people take care of their plants anytime and anywhere through an intuitive UI application.",
                 image: lovedtree,
             },
             {
@@ -41,7 +41,7 @@ class Project extends Component {
 
         return (
             <div className="condiv project">
-                <h1 className="subtopic">My Projects</h1>
+                <h1 className="subtopic">Projects</h1>
                 {projectCards.map((project, index) => (
                     <div key={index} onClick={() => this.handleCardClick(index)} style={{ cursor: 'pointer' }}>
                         <Projectcard

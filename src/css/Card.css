@@ -2,30 +2,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    margin-bottom: 3.125rem;
 }
 
 .widecard {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 0.625rem 0 1.875rem 0;
-    padding: 0.5rem;
-    transition: 0.5s;
-    border-radius: 0.625rem;
-    width: 35%; 
-    font-size: 1.3rem;
+    gap: 1.2rem;
+    margin: 0.625rem 0 1.5rem 0;
+    padding: 1.1rem 1.3rem;
+    transition: 0.25s ease;
+    border-radius: 1rem;
+    width: 70%;
+    max-width: 44rem;
+    font-size: 1.05rem;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #04bade;
+    box-sizing: border-box;
 }
 
 .widecard:hover {
-    box-shadow: 0 0 0.688rem rgba(33, 33, 33, .2);
-    color: #fff;
-    background: #04bade;
+    transform: translateY(-2px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.15);
 }
 
 .widecard img {
-    width: 40%;
-    height: 100%;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 0.75rem;
+    object-fit: cover;
 }
 .icon {
     width: 6.25rem;
@@ -43,40 +49,65 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 3.125rem;
 }
 
 .Projectcard {
     display: flex;
     align-items: center;
-    margin: 1rem 0;
-    padding: 0.3rem;
-    transition: 0.5s;
+    gap: 1.2rem;
+    margin: 1rem 0 1.5rem 0;
+    padding: 1.1rem 1.3rem;
+    transition: 0.25s ease;
     border-radius: 1rem;
-    width: 80vw;
-    border: #04bade 0.2rem solid;
-    font-size: 1.3rem;
+    width: 100%;
+    font-size: 1.05rem;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #04bade;
+    box-sizing: border-box;
 }
 
 .Projectcard img {
-    width: 30%;
-    height: auto;
+    width: 30rem;
+    height: 25rem;
     object-fit: cover;
     border-radius: 1rem;
-
 }
 
 .Projectcard:hover {
-    box-shadow: 0 0 1rem rgba(33, 33, 33, .2);
-    color: #fff;
-    background: #04bade;
+    transform: translateY(-2px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.15);
+}
+
+.Projectcard .compdet {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.Projectcard h2 {
+    margin: 0;
+    font-size: 1.25rem;
 }
 
 .Projectcard h3 {
+    margin: 0;
+    font-size: 0.95rem;
     font-weight: 500;
 }
 
-.Projectcard h4 {
+.project-role {
+    color: #4b5563;
+}
+
+.project-desc {
+    margin: 0;
+    font-size: 0.95rem;
     font-weight: 400;
+    line-height: 1.6;
+    color: #374151;
 }
 
 @media screen and (max-width: 48rem) {

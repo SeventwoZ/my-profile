@@ -1,36 +1,44 @@
 .socialcard {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 0.625rem 0 0.625rem 0;
-    padding: 0.5rem;
-    transition: 0.5s;
-    border-radius: 0.625rem;
-    width: 60%; 
-    font-size: 1.3rem;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0.6rem 0.85rem;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+    border-radius: 0.85rem;
+    width: 100%;
+    font-size: 1rem;
+    background: rgba(248, 250, 252, 0.9);
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+    box-sizing: border-box;
 }
 
 .socialcard:hover {
-    box-shadow: 0 0 0.688rem rgba(33, 33, 33, .2);
-    color: #fff;
-    background: #04bade;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 22px rgba(15, 23, 42, 0.16);
+    background: rgba(239, 246, 255, 0.95);
 }
 
 .socialcard p {
     text-decoration: none;
-    font-size: 1.2rem;
-    margin: 0.625rem;
-    font-weight: 450;
+    font-size: 0.95rem;
+    margin: 0;
+    font-weight: 500;
+    color: #111827;
+}
+
+.socialcard i {
+    margin-right: 0.6rem;
+    color: #6366f1;
 }
 
 @media screen and (max-width: 48rem) {
-
     .socialcard {
-        width: 80%;
+        width: 100%;
+        padding: 0.6rem 0.75rem;
     }
 
     .socialcard p {
-        font-size: 0.75rem;
-        font-weight: 450;
+        font-size: 0.9rem;
     }
 }

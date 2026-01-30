@@ -7,6 +7,7 @@ nav {
   height: 100%;
   background-color: #04abde;
   transition: left 0.3s ease; /* Add a smooth transition effect */
+  z-index: 1000; /* Keep navbar above page content and cards */
 }
 
 nav ul {
@@ -47,7 +48,7 @@ nav ul li a:hover {
   border-color: transparent;
   color: hsl(205, 77%, 32%);
   cursor: pointer;
-  z-index: 2;
+  z-index: 1100; /* Keep toggle button above the sidebar itself */
 }
 
 .active {

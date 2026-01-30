@@ -7,8 +7,8 @@ class Projectcard extends Component {
           <img src={this.props.image} alt={`${this.props.title} Image`} className="icon" />
           <div className="compdet">
             <h2>{this.props.title}</h2>
-            <h3 className="secondtext">{this.props.role}</h3>
-            <h4 className='secondtext'>{this.props.desc}</h4>
+            <h3 className="secondtext project-role">{this.props.role}</h3>
+            <p className="project-desc">{this.props.desc}</p>
           </div>
         </div>
     );

@@ -24,7 +24,8 @@ class Navbar extends Component {
     if (this.state.NavItemActive.length > 0) {
       document.getElementById(this.state.NavItemActive).classList.remove('active');
     }
-    this.setState({ NavItemActive: item }, () => {
+    // set active item and automatically close sidebar after navigation
+    this.setState({ NavItemActive: item, isSidebarOpen: false }, () => {
       document.getElementById(this.state.NavItemActive).classList.add('active');
     })
   }

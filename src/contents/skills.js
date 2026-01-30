@@ -8,7 +8,7 @@ class Skills extends Component {
     render() {
         return (
             <div className="condiv skills">
-                <h1 className="subtopic">My Skills</h1>
+                <h1 className="subtopic">Skills</h1>
                 <Skillsbox />
                 <Social />
             </div>
