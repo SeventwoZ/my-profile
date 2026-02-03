@@ -10,7 +10,7 @@ const Home = () => {
     <div className="condiv home">
       <section className="hero">
         <div className="hero-text">
-          <p className="hero-eyebrow">Welcome to my portfolio</p>
+          <p className="hero-eyebrow">Welcome to my website</p>
           <h1 className="hero-title">Hi, I&apos;m Kawgong</h1>
           <ReactTypingEffect
             text={[
