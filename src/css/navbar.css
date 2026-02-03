@@ -60,10 +60,6 @@ nav ul li a:hover {
   nav {
     left: 0;
   }
-
-  .sidebar-toggle {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 48rem) {
