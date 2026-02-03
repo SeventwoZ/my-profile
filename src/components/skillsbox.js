@@ -10,12 +10,12 @@ const Skillsbox = () => {
         {
             name: "Frontend",
             icon: "🎨",
-            skills: ["React", "HTML/CSS", "TailwindCSS"],
+            skills: ["ReactJS", "HTML/CSS", "TailwindCSS"],
         },
         {
             name: "Backend",
             icon: "⚙️",
-            skills: ["Node.js", "Django"],
+            skills: ["Node.js", "REST APIs", "Django"],
         },
         {
             name: "Databases",
@@ -25,7 +25,7 @@ const Skillsbox = () => {
         {
             name: "Tools & Workflow",
             icon: "🛠️",
-            skills: ["Git", "GitHub", "Figma", "Vercel", "Scrum", "Agile"],
+            skills: ["Git", "GitHub", "Figma", "Vercel", "Scrum", "Agile", "Jira", "Docker"],
         },
     ];
 
