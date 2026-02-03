@@ -37,6 +37,7 @@
     width: 6.25rem;
     height: auto;
     margin-right: 1.25rem;
+    object-fit: cover;
 }
 
 .compdet {
@@ -123,13 +124,27 @@
         font-size: 0.75rem;
     }
 
+    .icon {
+        width: 3rem;
+        height: auto;
+    }
+
     .widecard img {
-        width: 50%;
+        height: 2rem;
+        width: 2rem;
     }
 
     .Projectcard {
         width: 90vw;
         font-size: 0.5rem;
+    }
+
+    .project-role {
+        font-size: 0.75rem;
+    }
+
+    .project-desc {
+        font-size: 0.75rem;
     }
 
     .Projectcard img {
