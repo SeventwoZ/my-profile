@@ -2,9 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 3.125rem;
-    overflow: hidden;
+    justify-content: flex-start;
+    margin: 0 auto 3.125rem;
     width: 50%;
 }
 
@@ -74,6 +73,9 @@
     .skills {
         width: 100%;
         margin-top: 0;
+        padding-top: 3rem; /* Add padding to avoid overlap with toggle button */
+        margin-bottom: 5rem; /* Add margin to avoid overlap with social icons */
+        justify-content: flex-start; /* Align content to top instead of center */
     }
 
     .skills-box {
