@@ -130,9 +130,21 @@
   }
 }
 
+@media screen and (max-width: 64rem) and (min-width: 49rem) {
+  .about-layout {
+    gap: 2.5rem;
+  }
+
+  .about-profilepic {
+    width: 11rem;
+    height: 11rem;
+  }
+}
+
 @media screen and (max-width: 48rem) {
   .subtopic {
     font-size: 2.2rem;
+    text-align: left;
   }
 
   .about-layout {

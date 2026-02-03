@@ -56,7 +56,21 @@ nav ul li a:hover {
 }
 
 
+@media screen and (min-width: 65rem) {
+  nav {
+    left: 0;
+  }
+
+  .sidebar-toggle {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 48rem) {
+  nav {
+    width: 80vw;
+  }
+
   nav ul {
     font-size: 1.2rem;
   }

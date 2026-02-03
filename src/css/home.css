@@ -177,6 +177,17 @@
   }
 }
 
+@media screen and (max-width: 64rem) and (min-width: 49rem) {
+  .hero {
+    gap: 2rem;
+  }
+
+  .profilepic {
+    width: 14rem;
+    height: 14rem;
+  }
+}
+
 @media screen and (max-width: 48rem) {
   .home {
     padding: 3rem 1.5rem;
