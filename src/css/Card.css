@@ -33,6 +33,7 @@
     border-radius: 0.75rem;
     object-fit: cover;
 }
+
 .icon {
     width: 6.25rem;
     height: auto;
@@ -132,6 +133,8 @@
     .widecard img {
         width: 3rem;
         height: 3rem;
+        border-radius: 0.75rem;
+        object-fit: cover;
     }
 
     .Projectcard {
