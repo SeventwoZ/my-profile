@@ -1,4 +1,4 @@
-import './App.css';
+  import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
 
@@ -9,6 +9,7 @@ import Education from './contents/Education';
 import Project from './contents/Project';
 import Contact from './contents/Contact';
 import Skills from './contents/skills';
+import Certificate from './contents/Certificate';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/certificates" element={<Certificate />} />
         </Routes>
       </div>
     </Router>

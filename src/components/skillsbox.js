@@ -23,9 +23,9 @@ const Skillsbox = () => {
             skills: ["MongoDB", "MySQL"],
         },
         {
-            name: "Tools & Workflow",
+            name: "AI & Tools & Workflow",
             icon: "🛠️",
-            skills: ["Git", "GitHub", "Figma", "Vercel", "Scrum", "Agile", "Jira", "Docker"],
+            skills: ["Git", "GitHub", "Figma", "Vercel", "Scrum", "Agile", "Jira", "Docker", "Cursor", "Claude (Certified: Claude 101 by Anthropic)"],
         },
     ];
 
