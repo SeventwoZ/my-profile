@@ -5,17 +5,22 @@ const Skillsbox = () => {
         {
             name: "Languages",
             icon: "💻",
-            skills: ["Python", "JavaScript / TypeScript", "Java", "C++"],
+            skills: ["JavaScript / TypeScript", "Python", "Java", "C++" ],
         },
         {
             name: "Frontend",
             icon: "🎨",
-            skills: ["ReactJS", "HTML/CSS", "TailwindCSS"],
+            skills: ["ReactJS", "HTML5", "CSS3", "Tailwind CSS", "React Native", "Flutter"],
         },
         {
             name: "Backend",
             icon: "⚙️",
-            skills: ["Node.js", "REST APIs", "Django"],
+            skills: ["Node.js", "Django"],
+        },
+        {
+            name: "API",
+            icon: "⚙️",
+            skills: ["RestAPI", "RestfulAPI", "JWT Token"],
         },
         {
             name: "Databases",
@@ -23,9 +28,9 @@ const Skillsbox = () => {
             skills: ["MongoDB", "MySQL"],
         },
         {
-            name: "AI & Tools & Workflow",
+            name: "AI & Tools & Methodologies",
             icon: "🛠️",
-            skills: ["Git", "GitHub", "Figma", "Vercel", "Scrum", "Agile", "Jira", "Docker", "Cursor", "Claude (Certified: Claude 101 by Anthropic)"],
+            skills: ["Git", "GitHub", "Figma", "Jira", "Vercel", "Scrum", "Agile", "Jira", "Docker", "Cursor", "Claude (Certified: Claude 101 by Anthropic)"],
         },
     ];
 

@@ -9,8 +9,8 @@ class Widecard extends Component {
                 <div className="compdet">
                     <h3>{this.props.title}</h3>
                     <h4 className="secondtext">{this.props.where}</h4>
-                    <h4 className="secondtext">Since : {this.props.from} - {this.props.to}</h4>
-                    <h4 className="secondtext">GPA : {this.props.gpa}</h4>
+                    <h4 className="secondtext">Since: {this.props.from} - {this.props.to}</h4>
+                    <h4 className="secondtext">GPA: {this.props.gpa}</h4>
                 </div>
             </div>
         );
