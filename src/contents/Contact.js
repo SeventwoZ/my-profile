@@ -24,9 +24,9 @@ const Contact = () => {
 
         <div className="contact-grid">
           <Socialbox icon="fas fa-phone" info="+66 081 357 7509" />
-          <Socialbox icon="fas fa-envelope" info="mojizsz12@gmail.com" />
+          <Socialbox icon="fas fa-envelope" info="isaraa.phad@gmail.com" />
           <Socialbox icon="fab fa-line" info="Meteoriteism" />
-          <Socialbox icon="fas fa-map-marker-alt" info="Bangkok, Thailand" />
+          <Socialbox icon="fas fa-map-marker-alt" info="Rayong, Thailand" />
         </div>
       </div>
 

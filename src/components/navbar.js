@@ -1,55 +1,55 @@
-import React, { Component } from 'react';
-import NavMenu from './NavMenu'; // Assuming NavMenu is the correct component name, update accordingly
+import { useEffect, useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import '../css/navbar.css';
 
-class Navbar extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      NavItemActive: '',
-      isSidebarOpen: false,
-    };
-  }
+const links = [
+  ['Home', '/'],
+  ['About', '/about'],
+  ['Education', '/education'],
+  ['Skills', '/skills'],
+  ['Certificates', '/certificates'],
+  ['Projects', '/projects'],
+  ['Contact', '/contact'],
+];
 
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
+  useEffect(() => setIsOpen(false), [location.pathname]);
 
-  // Set state of the toggle button
-  toggleSidebar = () => {
-    this.setState((prevState) => ({
-      isSidebarOpen: !prevState.isSidebarOpen,
-    }));
-  };
-
-  activeItem = (item) => {
-    if (this.state.NavItemActive.length > 0) {
-      document.getElementById(this.state.NavItemActive).classList.remove('active');
-    }
-    // set active item and automatically close sidebar after navigation
-    this.setState({ NavItemActive: item, isSidebarOpen: false }, () => {
-      document.getElementById(this.state.NavItemActive).classList.add('active');
-    })
-  }
-
-  render() {
-    return (
-      <>
-        <button className='sidebar-toggle' onClick={() => this.toggleSidebar()}>
-          <span className="material-symbols-outlined">{this.state.isSidebarOpen ? "close" : "menu"}</span>
-        </button>
-        <nav className={this.state.isSidebarOpen ? "nav-active" : "nav-inactive"}>
-          <ul>
-            <NavMenu item="Home" tolink="/" activec={this.activeItem} />
-            <NavMenu item="About" tolink="/about" activec={this.activeItem}/>
-            <NavMenu item="Education" tolink="/education" activec={this.activeItem}/>
-            <NavMenu item="Skills" tolink="/skills" activec={this.activeItem} />
-            <NavMenu item="Certificates" tolink="/certificates" activec={this.activeItem} />
-            <NavMenu item="Projects" tolink="/projects" activec={this.activeItem}/>
-            <NavMenu item="Contact" tolink="/contact" activec={this.activeItem} />
-          </ul>
-        </nav>
-      </>
-    );
-  }
+  return (
+    <>
+      <button
+        className="sidebar-toggle"
+        type="button"
+        aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+        aria-expanded={isOpen}
+        aria-controls="primary-navigation"
+        onClick={() => setIsOpen((open) => !open)}
+      >
+        <span aria-hidden="true">{isOpen ? '×' : '☰'}</span>
+      </button>
+      {isOpen && <button className="nav-backdrop" type="button" aria-label="Close navigation menu" onClick={() => setIsOpen(false)} />}
+      <nav id="primary-navigation" className={`site-nav${isOpen ? ' nav-active' : ''}`} aria-label="Main navigation">
+        <div className="nav-brand">
+          <span className="nav-brand-mark">K</span>
+          <div><strong>Kawgong</strong><span>PORTFOLIO</span></div>
+        </div>
+        <p className="nav-section-label">MENU</p>
+        <ul>
+          {links.map(([label, path]) => (
+            <li key={path}>
+              <NavLink to={path} end={path === '/'} onClick={() => setIsOpen(false)}>
+                <span className="nav-link-dot" aria-hidden="true" />{label}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+        <div className="nav-footer"><span className="availability-dot" /> Open to opportunities</div>
+      </nav>
+    </>
+  );
 }
 
 export default Navbar;

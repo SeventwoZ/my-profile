@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Social from "../components/Social";
 import profile from "../imgs/Profile.jpg";
 import ReactTypingEffect from "react-typing-effect";
 import "../css/home.css";
@@ -35,9 +34,6 @@ const Home = () => {
             </Link>
           </div>
 
-          <div className="hero-social">
-            <Social />
-          </div>
         </div>
 
         <div className="hero-image">

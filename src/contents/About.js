@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import profile from "../imgs/Profile2.jpg";
-import Social from "../components/Social";
 import "../css/about.css";
 
 const About = () => {
@@ -32,7 +31,7 @@ const About = () => {
           <p className="about-body">
             I recently graduated from Kasetsart University with a Bachelor of
             Engineering in Software and Knowledge Engineering. Right now I&apos;m
-            looking for opportunities to grow as a software engineer, contribute
+            looking for opportunities to grow as a Developer mainly focused on Frontend, contribute
             to real projects, and learn from experienced teams.
           </p>
 
@@ -53,9 +52,6 @@ const About = () => {
         </div>
       </div>
 
-      <div className="about-social-wrapper">
-        <Social />
-      </div>
     </div>
   );
 };

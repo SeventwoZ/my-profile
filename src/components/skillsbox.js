@@ -5,17 +5,17 @@ const Skillsbox = () => {
         {
             name: "Languages",
             icon: "💻",
-            skills: ["JavaScript / TypeScript", "Python", "Java", "C++" ],
+            skills: ["JavaScript / TypeScript", "Python", "Java", "C++", "C#" ],
         },
         {
             name: "Frontend",
             icon: "🎨",
-            skills: ["ReactJS", "HTML5", "CSS3", "Tailwind CSS", "React Native", "Flutter"],
+            skills: ["ReactJS", "HTML5", "CSS3", "TailwindCSS", "React Native", "Flutter", "Next.js"],
         },
         {
             name: "Backend",
             icon: "⚙️",
-            skills: ["Node.js", "Django"],
+            skills: ["Node.js", "Django", "Laravel"],
         },
         {
             name: "API",

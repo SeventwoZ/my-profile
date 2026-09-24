@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Projectcard from "../components/Projectcard.js";
-import Social from "../components/Social.js";
 
 import QA from "../imgs/QA.png";
 import lovedtree from "../imgs/lovedtree.jpg";
@@ -8,11 +7,6 @@ import referite from "../imgs/Referite.png";
 import MyMoon from "../imgs/MyMoon.png";
 
 class Project extends Component {
-    handleCardClick = (link) => {
-        if (!link) return;
-        window.open(link, "_blank");
-    };
-
     render() {
         const projects = [
             {
@@ -66,23 +60,18 @@ class Project extends Component {
                         )}
 
                         {group.items.map((project, index) => (
-                            <div
-                                key={index}
-                                onClick={() => this.handleCardClick(project.link)}
-                                style={{ cursor: "pointer" }}
-                            >
+                            <a className="project-link" key={index} href={project.link} target="_blank" rel="noopener noreferrer">
                                 <Projectcard
                                     title={project.title}
                                     role={project.role}
                                     desc={project.desc}
                                     image={project.image}
                                 />
-                            </div>
+                            </a>
                         ))}
                     </div>
                 ))}
 
-                <Social />
             </div>
         );
     }
