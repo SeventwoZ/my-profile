@@ -5,6 +5,7 @@ import QA from "../imgs/QA.png";
 import lovedtree from "../imgs/lovedtree.jpg";
 import referite from "../imgs/Referite.png";
 import MyMoon from "../imgs/MyMoon.png";
+import Hospital from "../imgs/Hospital.png"
 
 class Project extends Component {
     render() {
@@ -44,6 +45,13 @@ class Project extends Component {
                         desc: "The fanmade fanbase website made for Lingling CGM48.",
                         image: MyMoon,
                         link: "https://mymoon-rabbit.vercel.app",
+                    },
+                    {
+                        title: "Hospital-case-lab",
+                        role: "NextJS",
+                        desc: "Hospital Case Lab คือเว็บแอปสำหรับตรวจสอบรายการยาและรายการแล็บของโรงพยาบาล โดยเปรียบเทียบไฟล์ข้อมูลของโรงพยาบาลกับฐานข้อมูลภาครัฐ ผู้ใช้สามารถอัปโหลดไฟล์ เลือกประเภทข้อมูลที่ต้องการตรวจสอบ และดูสรุปรายการที่พบหรือไม่พบได้ในหน้าเดียว",
+                        image: Hospital,
+                        link: "https://hospitalcaselab.vercel.app",
                     },
                 ],
             },
