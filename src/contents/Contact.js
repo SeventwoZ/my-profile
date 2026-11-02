@@ -23,7 +23,7 @@ const Contact = () => {
         </div>
 
         <div className="contact-grid">
-          <Socialbox icon="fas fa-phone" info="+66 081 357 7509" />
+          <Socialbox icon="fas fa-phone" info="+66 81 357 7509" />
           <Socialbox icon="fas fa-envelope" info="isaraa.phad@gmail.com" />
           <Socialbox icon="fab fa-line" info="Meteoriteism" />
           <Socialbox icon="fas fa-map-marker-alt" info="Rayong, Thailand" />
